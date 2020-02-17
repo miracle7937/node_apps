@@ -58,7 +58,7 @@ router.post('/', (req, res) => {
 					password: hash,
 					matricNumber: req.body.matricNumber,
 					phoneNumber: req.body.phoneNumber,
-					referralID: id.generate()
+					// referralID: id.generate()
 				});
 
 				//getting the referall of the newly registered member
