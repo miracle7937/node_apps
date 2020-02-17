@@ -1,6 +1,6 @@
 const express = require('express');
 const UserAuth = require('./userModel');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const router = express.Router();
 const nodemailer = require('nodemailer');
 const id = require('shortid');

@@ -5,7 +5,7 @@ const UserAuth = require('./userModel');
 const router = express.Router();
 const crypto = require('crypto');
 const async = require('async');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 router.post('/forget', function(req, res, next) {
 	async.waterfall([
