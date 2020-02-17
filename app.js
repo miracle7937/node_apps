@@ -25,6 +25,13 @@ app.use('/email', emailRoute);
 app.use('/requestloan', loanRequest);
 app.use('/useInfo_forLoan', userInfoPost);
 
+//error handling
+app.use((req,res)=>{
+	res.json({
+		message: 'page not found'
+	})
+});
+
 const port = process.env.PORT || 800;
 //for number verification
 
