@@ -51,6 +51,7 @@ router.post('/', (req, res) => {
 				// hashing password before saving it
 
 				const hash = bcrypt.hashSync(req.body.password, 10);
+				console.log(hash);
 
 				const savedUser = new UserAuth({
 					userName: req.body.userName,
@@ -67,7 +68,7 @@ router.post('/', (req, res) => {
 					.save()
 					.then((result) => {
 						//saveing the referal after user is saved
-						newRefeal.save();
+						// newRefeal.save();
 
 						res.status(200).json({
 							message: 'registration Successful',

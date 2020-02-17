@@ -31,6 +31,10 @@ const port = process.env.PORT || 800;
 // mongodb+srv://Smartloan:Miracle_22@cluste1-pbedw.mongodb.net/test?retryWrites=true&w=majority
 
 // '//mongodb://localhost:27017/smartLoan'
+
+//https://still-river-80448.herokuapp.com/
+//the url
+
 mongoose.connect('mongodb+srv://smartloan:smartloan@cluster0-wbqho.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true }, () => {
 	console.log('connect to mogoDb');
 });
