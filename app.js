@@ -7,6 +7,7 @@ const path = require('path');
 const loanRequest = require('./LoanRequest/Loan_Request');
 const userInfoPost = require('./LoanRequest/SaveRequestForLoan');
 
+
 //for messageing Auth
 const app = express();
 
@@ -38,13 +39,14 @@ const port = process.env.PORT || 800;
 // mongodb+srv://Smartloan:Miracle_22@cluste1-pbedw.mongodb.net/test?retryWrites=true&w=majority
 
 // '//mongodb://localhost:27017/smartLoan'
-
-//https://still-river-80448.herokuapp.com/
-//the url
-
-mongoose.connect('mongodb+srv://smartloan:smartloan@cluster0-wbqho.mongodb.net/test?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true }, () => {
+		    mongoose.connect("mongodb://Miracle:4hrZlimYiuxGAMk1@cluster0-shard-00-00-rz247.mongodb.net:27017,cluster0-shard-00-01-rz247.mongodb.net:27017,cluster0-shard-00-02-rz247.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority", {
+	useNewUrlParser: true,
+	useCreateIndex: true,
+	useUnifiedTopology: true
+}, () => {
 	console.log('connect to mogoDb');
 });
+
 
 app.listen(port, () => {
 	console.log('listing to port 800');

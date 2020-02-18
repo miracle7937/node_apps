@@ -41,11 +41,11 @@ router.post('/login', async (req, res) => {
 //create a user
 router.post('/', (req, res) => {
 	//checking if the user exist in the dataBase before creating a new user
+	console.log('hello i hit the route')
 	UserAuth.findOne({ email: req.body.email })
 		.then((result) => {
 			if (result == null) {
 				//new instance of referal
-				
 
 				console.log(req.body.password);
 				// hashing password before saving it
