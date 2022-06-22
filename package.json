@@ -11,7 +11,7 @@
 	"license": "ISC",
 	"dependencies": {
 		"add-subtract-date": "^1.0.14",
-		"async": "^3.1.1",
+		"async": "^3.2.2",
 		"bcryptjs": "^2.4.3",
 		"cloudinary": "^1.19.0",
 		"dotenv": "^8.2.0",
